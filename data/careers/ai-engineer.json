@@ -1,0 +1,12 @@
+{
+  "id": "ai-engineer",
+  "title": "AI Engineer",
+  "category": "data",
+  "description": "Develop and deploy machine learning systems that solve real-world problems.",
+  "skills": ["Machine Learning", "Python", "MLOps", "Data pipelines"],
+  "salary": "৳ 1,200,000 - 1,600,000",
+  "demand": "High",
+  "tech": ["Python", "TensorFlow", "Kubernetes", "AWS SageMaker"],
+  "requiredSkills": ["Python", "Machine Learning", "MLOps", "Data pipelines", "Cloud"],
+  "matchDetails": ["This is your closest fit because your profile already includes Python, machine learning, and data work. The main gaps are deployment, cloud familiarity, and production MLOps practices."]
+}

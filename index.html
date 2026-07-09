@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillBridge | AI Skill Gap Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand-group">
+        <a href="index.html" class="brand-logo">SkillBridge</a>
+      </div>
+      <nav class="top-nav">
+        <a href="index.html" class="nav-link active"><i data-lucide="home" class="d-icon"></i>Home</a>
+        <a href="dashboard.html" class="nav-link"><i data-lucide="layout-dashboard" class="d-icon"></i>Dashboard</a>
+        <a href="careers.html" class="nav-link"><i data-lucide="compass" class="d-icon"></i>Explore Careers</a>
+        <a href="assessment.html" class="nav-link"><i data-lucide="clipboard-check" class="d-icon"></i>Assessment</a>
+        <a href="ai-coach.html" class="nav-link"><i data-lucide="message-square" class="d-icon"></i>AI Coach</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-icon" id="theme-toggle" aria-label="Toggle theme"><i data-lucide="sun" class="d-icon" id="theme-icon-light" style="display:none;"></i><i data-lucide="moon" class="d-icon" id="theme-icon-dark"></i></button>
+        <a href="dashboard.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">Get Started <i data-lucide="arrow-right" class="d-icon"></i></a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <span class="eyebrow">AI-powered career guidance</span>
+          <h1>Bridge the gap between your skills and your dream career.</h1>
+          <p>SkillBridge analyzes your profile, highlights missing competencies, and generates a personalized roadmap to help you become industry-ready faster.</p>
+          <div class="hero-actions">
+            <a href="assessment.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">Start Skill Assessment <i data-lucide="compass" class="d-icon"></i></a>
+            <a href="#features" class="btn btn-ghost" style="display: inline-flex; align-items: center; gap: 8px;">Explore Features <i data-lucide="chevron-down" class="d-icon"></i></a>
+          </div>
+          <div class="hero-stat-grid">
+            <div class="stat-card" style="position: relative; overflow: hidden; padding: 20px; border-radius: var(--radius);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <i data-lucide="trending-up" class="d-icon" style="color: var(--primary); width: 22px; height: 22px;"></i>
+                <span class="chip" style="font-size: 0.7rem; padding: 2px 8px;">Success</span>
+              </div>
+              <strong style="font-size: 2.2rem; font-weight: 800; line-height: 1.1; margin-bottom: 6px;">92%</strong>
+              <span style="font-size: 0.85rem; color: var(--muted); display: block;">Average readiness improvement</span>
+            </div>
+            <div class="stat-card" style="position: relative; overflow: hidden; padding: 20px; border-radius: var(--radius);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <i data-lucide="briefcase" class="d-icon" style="color: var(--primary); width: 22px; height: 22px;"></i>
+                <span class="chip" style="font-size: 0.7rem; padding: 2px 8px;">Global</span>
+              </div>
+              <strong style="font-size: 2.2rem; font-weight: 800; line-height: 1.1; margin-bottom: 6px;">10+</strong>
+              <span style="font-size: 0.85rem; color: var(--muted); display: block;">Career paths supported</span>
+            </div>
+            <div class="stat-card" style="position: relative; overflow: hidden; padding: 20px; border-radius: var(--radius);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <i data-lucide="lightbulb" class="d-icon" style="color: var(--primary); width: 22px; height: 22px;"></i>
+                <span class="chip" style="font-size: 0.7rem; padding: 2px 8px;">AI-Powered</span>
+              </div>
+              <strong style="font-size: 2.2rem; font-weight: 800; line-height: 1.1; margin-bottom: 6px;">180+</strong>
+              <span style="font-size: 0.85rem; color: var(--muted); display: block;">Skill gap insights generated</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-card glass-card">
+            <div class="visual-header">
+              <span>Career Readiness Snapshot</span>
+              <div class="chip">Most Viewed</div>
+            </div>
+            <canvas class="chart-mock" id="hero-chart" width="520" height="260"></canvas>
+            <div class="visual-meta">
+              <div>
+                <span>Ready Score</span>
+                <strong>78</strong>
+              </div>
+              <div>
+                <span>Gap Focus</span>
+                <strong>AI Engineering</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="section-heading">
+          <span class="eyebrow">Why SkillBridge</span>
+          <h2>Modern career intelligence, built for professionals.</h2>
+          <p>Turn your current experience into a clear plan with AI-driven skill gap analysis and personalized learning guidance.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border-radius: var(--radius);">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(59, 130, 246, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+              <i data-lucide="bar-chart-2" style="width: 24px; height: 24px;"></i>
+            </div>
+            <h3 style="margin-bottom: 0;">Skill gap analysis</h3>
+            <p>Evaluate your current abilities against target careers and discover what to prioritize.</p>
+          </article>
+          <article class="feature-card" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border-radius: var(--radius);">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(59, 130, 246, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+              <i data-lucide="map" style="width: 24px; height: 24px;"></i>
+            </div>
+            <h3 style="margin-bottom: 0;">Learning roadmap</h3>
+            <p>Get a weekly timeline with curated modules, projects, and certifications.</p>
+          </article>
+          <article class="feature-card" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border-radius: var(--radius);">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(59, 130, 246, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+              <i data-lucide="bot" style="width: 24px; height: 24px;"></i>
+            </div>
+            <h3 style="margin-bottom: 0;">AI career coach</h3>
+            <p>Ask career questions, plan your next move, and get actionable advice.</p>
+          </article>
+          <article class="feature-card" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border-radius: var(--radius);">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(59, 130, 246, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+              <i data-lucide="sparkles" style="width: 24px; height: 24px;"></i>
+            </div>
+            <h3 style="margin-bottom: 0;">Personalized insights</h3>
+            <p>Focus on the skills that matter most for your chosen career path.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section transparent-panel glass-panel">
+        <div class="section-heading">
+          <span class="eyebrow">How it works</span>
+          <h2>From assessment to readiness in four simple steps.</h2>
+        </div>
+        <div class="process-grid">
+          <article class="process-step" style="display: flex; flex-direction: column; gap: 12px; padding: 20px; border-radius: var(--radius); background: rgba(59, 130, 246, 0.04); border: 1px solid var(--border);">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="step-number" style="margin-bottom: 0;">1</span>
+              <i data-lucide="clipboard-list" style="color: var(--primary); width: 20px; height: 20px;"></i>
+            </div>
+            <h3 style="margin-top: 8px;">Complete assessment</h3>
+            <p>Tell us about your skills, experience, and career goals.</p>
+          </article>
+          <article class="process-step" style="display: flex; flex-direction: column; gap: 12px; padding: 20px; border-radius: var(--radius); background: rgba(59, 130, 246, 0.04); border: 1px solid var(--border);">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="step-number" style="margin-bottom: 0;">2</span>
+              <i data-lucide="bar-chart-3" style="color: var(--primary); width: 20px; height: 20px;"></i>
+            </div>
+            <h3 style="margin-top: 8px;">Review gap insights</h3>
+            <p>See where your strengths align and where the gaps remain.</p>
+          </article>
+          <article class="process-step" style="display: flex; flex-direction: column; gap: 12px; padding: 20px; border-radius: var(--radius); background: rgba(59, 130, 246, 0.04); border: 1px solid var(--border);">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="step-number" style="margin-bottom: 0;">3</span>
+              <i data-lucide="milestone" style="color: var(--primary); width: 20px; height: 20px;"></i>
+            </div>
+            <h3 style="margin-top: 8px;">Follow your roadmap</h3>
+            <p>Advance with curated modules, projects, and certifications.</p>
+          </article>
+          <article class="process-step" style="display: flex; flex-direction: column; gap: 12px; padding: 20px; border-radius: var(--radius); background: rgba(59, 130, 246, 0.04); border: 1px solid var(--border);">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="step-number" style="margin-bottom: 0;">4</span>
+              <i data-lucide="line-chart" style="color: var(--primary); width: 20px; height: 20px;"></i>
+            </div>
+            <h3 style="margin-top: 8px;">Track progress</h3>
+            <p>Monitor readiness, achievements, and career momentum.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section career-categories">
+        <div class="section-heading">
+          <span class="eyebrow">Career categories</span>
+          <h2>Explore high-growth technology careers.</h2>
+        </div>
+        <div class="category-grid">
+          <div class="category-card" style="display: flex; flex-direction: column; gap: 8px; border-radius: var(--radius);"><i data-lucide="layout" style="color: var(--primary); width: 24px; height: 24px;"></i>Frontend Developer</div>
+          <div class="category-card" style="display: flex; flex-direction: column; gap: 8px; border-radius: var(--radius);"><i data-lucide="cpu" style="color: var(--primary); width: 24px; height: 24px;"></i>AI Engineer</div>
+          <div class="category-card" style="display: flex; flex-direction: column; gap: 8px; border-radius: var(--radius);"><i data-lucide="database" style="color: var(--primary); width: 24px; height: 24px;"></i>Data Scientist</div>
+          <div class="category-card" style="display: flex; flex-direction: column; gap: 8px; border-radius: var(--radius);"><i data-lucide="shield-check" style="color: var(--primary); width: 24px; height: 24px;"></i>Cybersecurity Analyst</div>
+          <div class="category-card" style="display: flex; flex-direction: column; gap: 8px; border-radius: var(--radius);"><i data-lucide="infinity" style="color: var(--primary); width: 24px; height: 24px;"></i>DevOps Engineer</div>
+          <div class="category-card" style="display: flex; flex-direction: column; gap: 8px; border-radius: var(--radius);"><i data-lucide="users" style="color: var(--primary); width: 24px; height: 24px;"></i>Product Manager</div>
+        </div>
+      </section>
+
+      <section class="section benefits-panel">
+        <div class="section-heading">
+          <span class="eyebrow">Benefits</span>
+          <h2>Empower your career path with meaningful clarity.</h2>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card" style="padding: 24px; border-radius: var(--radius); display: flex; flex-direction: column; gap: 12px;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(16, 185, 129, 0.08); display: flex; align-items: center; justify-content: center; color: var(--success);">
+              <i data-lucide="target" style="width: 20px; height: 20px;"></i>
+            </div>
+            <h3 style="margin-bottom: 0;">Focus on what matters</h3>
+            <p>Spend less time guessing and more time building the right skills.</p>
+          </article>
+          <article class="benefit-card" style="padding: 24px; border-radius: var(--radius); display: flex; flex-direction: column; gap: 12px;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(16, 185, 129, 0.08); display: flex; align-items: center; justify-content: center; color: var(--success);">
+              <i data-lucide="zap" style="width: 20px; height: 20px;"></i>
+            </div>
+            <h3 style="margin-bottom: 0;">Stay motivated</h3>
+            <p>Track progress with simple milestones and timely feedback.</p>
+          </article>
+          <article class="benefit-card" style="padding: 24px; border-radius: var(--radius); display: flex; flex-direction: column; gap: 12px;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(16, 185, 129, 0.08); display: flex; align-items: center; justify-content: center; color: var(--success);">
+              <i data-lucide="award" style="width: 20px; height: 20px;"></i>
+            </div>
+            <h3 style="margin-bottom: 0;">Prepare for interviews</h3>
+            <p>Align your resume and portfolio with the role you want.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section testimonials-panel">
+        <div class="section-heading">
+          <span class="eyebrow">Testimonials</span>
+          <h2>Professionals who upgraded their career roadmap.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card" style="padding: 24px; border-radius: var(--radius); display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+            <p style="margin: 0; font-style: italic;">“SkillBridge helped me identify the exact certifications and projects I needed to move into AI engineering.”</p>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(59, 130, 246, 0.12); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                <i data-lucide="user" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <strong style="margin-bottom: 0;">Priya Sharma</strong>
+                <span style="font-size: 0.85rem; color: var(--muted);">AI Engineer</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card" style="padding: 24px; border-radius: var(--radius); display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+            <p style="margin: 0; font-style: italic;">“The skill gap insights made my learning plan feel achievable and relevant.”</p>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(59, 130, 246, 0.12); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                <i data-lucide="user" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <strong style="margin-bottom: 0;">Marcus Lee</strong>
+                <span style="font-size: 0.85rem; color: var(--muted);">Frontend Developer</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card" style="padding: 24px; border-radius: var(--radius); display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+            <p style="margin: 0; font-style: italic;">“The AI coach is a great way to get direction when you’re deciding between career tracks.”</p>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(59, 130, 246, 0.12); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                <i data-lucide="user" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <strong style="margin-bottom: 0;">Alexa Morgan</strong>
+                <span style="font-size: 0.85rem; color: var(--muted);">Product Manager</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq-panel">
+        <div class="section-heading">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions about SkillBridge.</h2>
+        </div>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>Is this a real AI assessment?</h3>
+            <p>This prototype uses mock data and simulated analysis designed for frontend exploration only.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Do I need to connect my resume?</h3>
+            <p>The assessment UI supports upload fields, but no backend processing is implemented.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can I use this for career planning?</h3>
+            <p>Yes — the prototype is built to simulate a complete career readiness experience for product evaluation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta-panel glass-panel">
+        <div class="cta-copy">
+          <span class="eyebrow">Ready to discover your gap?</span>
+          <h2>Start your assessment and unlock a smarter learning path.</h2>
+        </div>
+        <a href="assessment.html" class="btn btn-primary">Begin Assessment</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <div>
+          <strong>SkillBridge</strong>
+          <p>AI career readiness for modern professionals.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="careers.html">Careers</a>
+          <a href="assessment.html">Assessment</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">Help center</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SkillBridge. Built for career readiness.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/mock-data.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

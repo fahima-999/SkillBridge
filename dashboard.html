@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | SkillBridge</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="dashboard-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <a href="index.html">SkillBridge</a>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="sidebar-link active"><i data-lucide="layout-dashboard" class="d-icon"></i>Dashboard</a>
+        <a href="careers.html" class="sidebar-link"><i data-lucide="compass" class="d-icon"></i>Career Explorer</a>
+        <a href="assessment.html" class="sidebar-link"><i data-lucide="clipboard-check" class="d-icon"></i>Assessment</a>
+        <a href="results.html" class="sidebar-link"><i data-lucide="trending-up" class="d-icon"></i>Skill Gap</a>
+        <a href="roadmap.html" class="sidebar-link"><i data-lucide="map" class="d-icon"></i>Roadmap</a>
+        <a href="resume-analysis.html" class="sidebar-link"><i data-lucide="file-text" class="d-icon"></i>Resume Analysis</a>
+        <a href="ai-coach.html" class="sidebar-link"><i data-lucide="message-square" class="d-icon"></i>AI Coach</a>
+        <a href="profile.html" class="sidebar-link"><i data-lucide="user" class="d-icon"></i>Profile</a>
+        <a href="settings.html" class="sidebar-link"><i data-lucide="settings" class="d-icon"></i>Settings</a>
+      </nav>
+    </aside>
+    <div class="dashboard-content">
+      <header class="dashboard-header">
+        <button class="icon-button" id="sidebar-toggle" style="display: inline-flex; align-items: center; justify-content: center;"><i data-lucide="menu" class="d-icon"></i></button>
+        <div>
+          <h1 style="font-size: 1.8rem; font-weight: 800; line-height: 1.2;">Welcome back, Jordan</h1>
+          <p>Review your progress and next steps for your AI career path.</p>
+        </div>
+        <button class="btn btn-icon" id="theme-toggle-dashboard" aria-label="Toggle theme"><i data-lucide="sun" class="d-icon" id="theme-icon-light" style="display:none;"></i><i data-lucide="moon" class="d-icon" id="theme-icon-dark"></i></button>
+      </header>
+
+      <section class="dashboard-grid">
+        <div class="panel summary-card">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">Career readiness</span>
+              <h2>Overall score</h2>
+            </div>
+            <span class="chip">+12% this week</span>
+          </div>
+          <div class="score-ring" id="readiness-ring">
+            <div class="score-center">
+              <strong>78</strong>
+              <span>Ready</span>
+            </div>
+          </div>
+          <div class="score-metrics">
+            <div>
+              <span>Skill alignment</span>
+              <strong>72%</strong>
+            </div>
+            <div>
+              <span>Roadmap progress</span>
+              <strong>56%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel mini-card" style="display: flex; flex-direction: column; justify-content: space-between; border-radius: var(--radius); padding: 24px; position: relative;">
+          <div>
+            <span class="eyebrow">Open roles</span>
+            <h3 style="margin-top: 8px; margin-bottom: 4px;">AI Engineer</h3>
+            <p style="margin: 0;">Target role aligned with your skills and goals.</p>
+          </div>
+          <div style="position: absolute; right: 24px; top: 24px; width: 40px; height: 40px; border-radius: 12px; background: rgba(59, 130, 246, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+            <i data-lucide="target" style="width: 20px; height: 20px;"></i>
+          </div>
+        </div>
+        <div class="panel mini-card" style="display: flex; flex-direction: column; justify-content: space-between; border-radius: var(--radius); padding: 24px; position: relative;">
+          <div>
+            <span class="eyebrow">Next milestone</span>
+            <h3 style="margin-top: 8px; margin-bottom: 4px;">Complete ML project</h3>
+            <p style="margin: 0;">Finish the capstone project by Friday.</p>
+          </div>
+          <div style="position: absolute; right: 24px; top: 24px; width: 40px; height: 40px; border-radius: 12px; background: rgba(59, 130, 246, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+            <i data-lucide="calendar" style="width: 20px; height: 20px;"></i>
+          </div>
+        </div>
+        <div class="panel mini-card" style="display: flex; flex-direction: column; justify-content: space-between; border-radius: var(--radius); padding: 24px; position: relative;">
+          <div>
+            <span class="eyebrow">Certification progress</span>
+            <h3 style="margin-top: 8px; margin-bottom: 4px;">3 of 5 completed</h3>
+            <p style="margin: 0;">Continue with cloud and data modules.</p>
+          </div>
+          <div style="position: absolute; right: 24px; top: 24px; width: 40px; height: 40px; border-radius: 12px; background: rgba(59, 130, 246, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+            <i data-lucide="award" style="width: 20px; height: 20px;"></i>
+          </div>
+        </div>
+
+        <div class="panel panel-large" style="border-radius: var(--radius);">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">Skill gap summary</span>
+              <h2>High-priority competencies</h2>
+            </div>
+            <a href="results.html" class="link-button" style="display: inline-flex; align-items: center; gap: 6px;">View full report <i data-lucide="arrow-right" class="d-icon"></i></a>
+          </div>
+          <div class="gap-grid">
+            <article class="gap-item">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="margin-bottom: 0; display: inline-flex; align-items: center; gap: 8px;"><i data-lucide="brain-circuit" style="color: var(--primary); width: 18px; height: 18px;"></i> Machine learning</h3>
+                <span class="chip" style="background: rgba(239, 68, 68, 0.12); color: var(--danger); font-size: 0.75rem; padding: 2px 8px;">Missing</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 34%"></div></div>
+            </article>
+            <article class="gap-item">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="margin-bottom: 0; display: inline-flex; align-items: center; gap: 8px;"><i data-lucide="cloud" style="color: var(--primary); width: 18px; height: 18px;"></i> Cloud architecture</h3>
+                <span class="chip" style="background: rgba(245, 158, 11, 0.12); color: #d97706; font-size: 0.75rem; padding: 2px 8px;">Developing</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 56%"></div></div>
+            </article>
+            <article class="gap-item">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="margin-bottom: 0; display: inline-flex; align-items: center; gap: 8px;"><i data-lucide="git-pull-request" style="color: var(--primary); width: 18px; height: 18px;"></i> System design</h3>
+                <span class="chip" style="background: rgba(59, 130, 246, 0.12); color: var(--primary-strong); font-size: 0.75rem; padding: 2px 8px;">Needs practice</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 48%"></div></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel roadmap-preview" style="border-radius: var(--radius);">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">Learning roadmap</span>
+              <h2>Next 7 days</h2>
+            </div>
+            <a href="roadmap.html" class="link-button" style="display: inline-flex; align-items: center; gap: 6px;">Open roadmap <i data-lucide="map" class="d-icon"></i></a>
+          </div>
+          <ul class="roadmap-list">
+            <li style="display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="check-circle-2" style="color: var(--success); width: 18px; height: 18px; flex-shrink: 0; margin-top: 3px;"></i> <div><strong>Week 1</strong> — Python essentials, ML foundations, resume refresh</div></li>
+            <li style="display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="circle" style="color: var(--muted); width: 18px; height: 18px; flex-shrink: 0; margin-top: 3px;"></i> <div><strong>Week 2</strong> — Cloud architecture, devops automation, interview prep</div></li>
+            <li style="display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="circle" style="color: var(--muted); width: 18px; height: 18px; flex-shrink: 0; margin-top: 3px;"></i> <div><strong>Week 3</strong> — AI project, certification modules, coding challenges</div></li>
+          </ul>
+        </div>
+
+        <div class="panel panel-large insights-card" style="border-radius: var(--radius);">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">Career insights</span>
+              <h2>Actionable recommendations</h2>
+            </div>
+          </div>
+          <div class="insights-grid" style="grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;">
+            <article class="insight-item" style="border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 8px;">
+              <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(59, 130, 246, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                <i data-lucide="folder-git-2" style="width: 18px; height: 18px;"></i>
+              </div>
+              <h3 style="margin-bottom: 0;">Boost your portfolio</h3>
+              <p style="margin: 0; font-size: 0.9rem;">Add two AI projects showing model deployment.</p>
+            </article>
+            <article class="insight-item" style="border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 8px;">
+              <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(59, 130, 246, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                <i data-lucide="cloud-lightning" style="width: 18px; height: 18px;"></i>
+              </div>
+              <h3 style="margin-bottom: 0;">Sharpen cloud skills</h3>
+              <p style="margin: 0; font-size: 0.9rem;">Finish Cloud Practitioner and one hands-on lab.</p>
+            </article>
+            <article class="insight-item" style="border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 8px;">
+              <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(59, 130, 246, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                <i data-lucide="speech" style="width: 18px; height: 18px;"></i>
+              </div>
+              <h3 style="margin-bottom: 0;">Interview readiness</h3>
+              <p style="margin: 0; font-size: 0.9rem;">Practice system design and ML case studies.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel activity-card" style="border-radius: var(--radius);">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">Recent activity</span>
+              <h2>Latest updates</h2>
+            </div>
+          </div>
+          <ul class="activity-list" style="list-style: none; padding-left: 0; display: grid; gap: 12px; margin: 0;">
+            <li style="display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--surface-strong); border: 1px solid var(--border); border-radius: 12px;"><i data-lucide="history" style="color: var(--primary); width: 16px; height: 16px;"></i> <div>Completed ML fundamentals module - 2 hours ago</div></li>
+            <li style="display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--surface-strong); border: 1px solid var(--border); border-radius: 12px;"><i data-lucide="history" style="color: var(--primary); width: 16px; height: 16px;"></i> <div>Reviewed cloud architecture recommendations - yesterday</div></li>
+            <li style="display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--surface-strong); border: 1px solid var(--border); border-radius: 12px;"><i data-lucide="history" style="color: var(--primary); width: 16px; height: 16px;"></i> <div>Saved AI career path to favorites - 3 days ago</div></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/mock-data.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

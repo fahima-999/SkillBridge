@@ -1,0 +1,12 @@
+{
+  "id": "data-scientist",
+  "title": "Data Scientist",
+  "category": "data",
+  "description": "Extract insights from data and build models that power business decisions.",
+  "skills": ["Statistics", "Python", "Data visualization", "SQL"],
+  "salary": "৳ 1,100,000 - 1,500,000",
+  "demand": "High",
+  "tech": ["Python", "SQL", "Tableau", "Pandas"],
+  "requiredSkills": ["Statistics", "Python", "Data visualization", "SQL"],
+  "matchDetails": ["Data science roles rely on analytics, experimentation, and communication. Your existing SQL and Python background is a strong foundation, and adding statistics-focused practice would raise the match score further."]
+}

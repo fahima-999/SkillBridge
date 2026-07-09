@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Analysis | SkillBridge</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand-group">
+        <a href="index.html" class="brand-logo">SkillBridge</a>
+      </div>
+      <nav class="top-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="careers.html" class="nav-link">Explore Careers</a>
+        <a href="assessment.html" class="nav-link">Assessment</a>
+        <a href="ai-coach.html" class="nav-link">AI Coach</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-icon" id="theme-toggle-resume" aria-label="Toggle theme">🌙</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="section">
+        <div class="section-heading">
+          <span class="eyebrow">Resume analysis</span>
+          <h1>Optimize your resume for ATS and hiring managers.</h1>
+          <p>Review mock strengths, missing keywords, and improvement suggestions.</p>
+        </div>
+      </section>
+
+      <section class="section result-grid">
+        <div class="panel score-card">
+          <h2>ATS score</h2>
+          <div class="score-display">
+            <strong>84</strong>
+            <span>Resume strength</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 84%"></div></div>
+        </div>
+        <div class="panel score-card">
+          <h2>Keywords matched</h2>
+          <div class="score-display">
+            <strong>12</strong>
+            <span>Relevant terms found</span>
+          </div>
+        </div>
+        <div class="panel">
+          <h2>Resume strengths</h2>
+          <ul class="simple-list">
+            <li>Clear role focus</li>
+            <li>Strong technical keywords</li>
+            <li>Project-driven examples</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Missing keywords</h2>
+          <div class="tag-grid"><span class="skill-tag missing">Kubernetes</span><span class="skill-tag missing">MLOps</span><span class="skill-tag missing">Cloud-native</span></div>
+        </div>
+      </section>
+
+      <section class="section feedback-card">
+        <div class="panel">
+          <h2>Suggested improvements</h2>
+          <ul class="simple-list">
+            <li>Quantify outcomes for AI projects.</li>
+            <li>Include cloud deployment tooling.</li>
+            <li>Highlight collaboration with product teams.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Resume checklist</h2>
+          <ul class="simple-list">
+            <li>Clear summary statement</li>
+            <li>Consistent formatting</li>
+            <li>Action-oriented achievements</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <div>
+          <strong>SkillBridge</strong>
+          <p>AI career readiness for modern professionals.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="careers.html">Careers</a>
+          <a href="assessment.html">Assessment</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">Help center</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SkillBridge. Built for career readiness.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

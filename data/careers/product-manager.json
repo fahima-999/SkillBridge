@@ -1,0 +1,12 @@
+{
+  "id": "product-manager",
+  "title": "Product Manager",
+  "category": "product",
+  "description": "Define product strategy and work with teams to deliver customer value.",
+  "skills": ["Roadmapping", "Research", "Communication", "Strategy"],
+  "salary": "৳ 1,000,000 - 1,400,000",
+  "demand": "High",
+  "tech": ["Jira", "Notion", "Figma", "Miro"],
+  "requiredSkills": ["Roadmapping", "Research", "Communication", "Strategy"],
+  "matchDetails": ["Product management is a strong fit if you enjoy translating technical work into customer outcomes. Your experience and communication strengths help, but roadmap and stakeholder planning should be strengthened."]
+}

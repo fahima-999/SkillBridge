@@ -1,0 +1,238 @@
+.form-step {
+  display: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.form-step.active {
+  display: grid;
+  gap: 24px;
+}
+
+.form-progress {
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.08);
+  margin-bottom: 24px;
+  overflow: hidden;
+  --progress: 20%;
+}
+
+.form-progress::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: var(--progress);
+  background: linear-gradient(90deg, var(--primary), var(--primary-strong));
+  transition: width 0.4s ease;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+}
+
+.panel-heading h2 {
+  margin: 0;
+}
+
+.summary-card,
+.mini-card,
+.insights-card,
+.activity-card,
+.roadmap-preview,
+.skill-list-panel,
+.feedback-card,
+.result-grid .panel {
+  min-height: 220px;
+}
+
+.nav-link,
+.sidebar-link,
+.btn,
+.prompt-btn {
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.22s ease;
+}
+
+.btn:hover,
+.prompt-btn:hover,
+.nav-link:hover,
+.sidebar-link:hover {
+  opacity: 0.92;
+}
+
+.icon-button {
+  background: rgba(59, 130, 246, 0.08);
+  border: none;
+  border-radius: 14px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.score-ring {
+  width: 100%;
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.14), transparent 80%);
+}
+
+.score-center {
+  text-align: center;
+}
+
+.score-center strong {
+  font-size: 4rem;
+  display: block;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.simple-list li,
+.activity-list li,
+.roadmap-list li {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+}
+
+.chat-header {
+  margin-bottom: 20px;
+}
+
+.chat-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.prompt-list {
+  display: grid;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .search-panel,
+  .prompt-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Premium Icons and Layouts Helpers */
+.d-icon {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2px;
+  vertical-align: middle;
+  display: inline-block;
+  transition: transform 0.2s ease, stroke 0.2s ease;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-link .d-icon {
+  color: var(--muted);
+}
+
+.sidebar-link.active .d-icon {
+  color: var(--primary-strong);
+  stroke-width: 2.5px;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Beautiful custom toggle switches for Settings */
+.toggle-row input[type="checkbox"] {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  appearance: none;
+  background: rgba(15, 23, 42, 0.08);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  border: 1px solid var(--border);
+}
+
+.dark .toggle-row input[type="checkbox"] {
+  background: rgba(148, 163, 184, 0.12);
+}
+
+.toggle-row input[type="checkbox"]::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--surface);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-row input[type="checkbox"]:checked {
+  background: var(--primary);
+}
+
+.toggle-row input[type="checkbox"]:checked::after {
+  transform: translateX(24px);
+}
+
+/* Glass panel */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(24px);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.dark .glass-panel {
+  background: rgba(17, 24, 39, 0.7);
+  border: 1px solid var(--border);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.panel, .career-card, .timeline-item, .chat-message {
+  animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Animation delays */
+.panel:nth-child(1) { animation-delay: 0.05s; }
+.panel:nth-child(2) { animation-delay: 0.1s; }
+.panel:nth-child(3) { animation-delay: 0.15s; }
+.panel:nth-child(4) { animation-delay: 0.2s; }
+.panel:nth-child(5) { animation-delay: 0.25s; }

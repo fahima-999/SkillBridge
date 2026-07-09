@@ -1,0 +1,12 @@
+{
+  "id": "backend-developer",
+  "title": "Backend Developer",
+  "category": "developer",
+  "description": "Design scalable server-side systems, APIs, and database solutions.",
+  "skills": ["Node.js", "Databases", "APIs", "Architecture"],
+  "salary": "৳ 950,000 - 1,250,000",
+  "demand": "High",
+  "tech": ["Node.js", "PostgreSQL", "Docker", "GraphQL"],
+  "requiredSkills": ["Node.js", "Databases", "APIs", "Architecture"],
+  "matchDetails": ["Backend work prioritizes API design, data modeling, and service reliability. Your SQL and software experience make a good base for this path."]
+}

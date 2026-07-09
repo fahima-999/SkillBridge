@@ -1,0 +1,12 @@
+{
+  "id": "frontend-developer",
+  "title": "Frontend Developer",
+  "category": "developer",
+  "description": "Build responsive user interfaces with modern JavaScript frameworks and thoughtful design systems.",
+  "skills": ["HTML", "CSS", "JavaScript", "React"],
+  "salary": "৳ 850,000 - 1,150,000",
+  "demand": "High",
+  "tech": ["React", "TypeScript", "Figma", "Storybook"],
+  "requiredSkills": ["HTML", "CSS", "JavaScript", "React"],
+  "matchDetails": ["This role values strong UI implementation and modern frontend libraries. Your profile already includes Python and data analysis, which helps you communicate with product and engineering teams."]
+}

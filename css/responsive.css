@@ -1,0 +1,64 @@
+@media (max-width: 980px) {
+  .hero-panel,
+  .dashboard-grid,
+  .career-grid,
+  .feature-grid,
+  .process-grid,
+  .category-grid,
+  .benefits-grid,
+  .testimonial-grid,
+  .faq-grid,
+  .ai-cards-grid,
+  .result-grid,
+  .profile-grid,
+  .settings-grid,
+  .coach-panel,
+  .detail-panels,
+  .comparison-panel,
+  .roadmap-panel,
+  .feedback-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header,
+  .top-nav,
+  .header-actions {
+    align-items: flex-start;
+  }
+
+  .page-shell,
+  .dashboard-shell {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-panel {
+    padding: 24px 0;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .top-nav {
+    gap: 10px;
+  }
+
+  .header-actions {
+    justify-content: space-between;
+  }
+
+  .search-panel {
+    flex-direction: column;
+  }
+
+  .career-card,
+  .panel,
+  .timeline-item,
+  .chat-panel,
+  .chat-sidebar {
+    padding: 20px;
+  }
+}

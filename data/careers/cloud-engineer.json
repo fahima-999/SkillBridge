@@ -1,0 +1,12 @@
+{
+  "id": "cloud-engineer",
+  "title": "Cloud Engineer",
+  "category": "cloud",
+  "description": "Design and maintain scalable cloud systems with secure architecture.",
+  "skills": ["AWS", "Azure", "Cloud security", "Automation"],
+  "salary": "৳ 1,100,000 - 1,450,000",
+  "demand": "High",
+  "tech": ["AWS", "GCP", "Terraform", "Ansible"],
+  "requiredSkills": ["AWS", "Cloud security", "Automation", "Kubernetes"],
+  "matchDetails": ["Cloud roles reward hands-on infrastructure knowledge and automation. Your profile is close, but adding cloud-specific experience and Kubernetes knowledge would strengthen it."]
+}
